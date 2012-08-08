@@ -1,0 +1,35 @@
+\documentclass[a4paper, 12pt, oneside]{report}
+\frenchspacing
+\usepackage[warn]{mathtext}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage[T2A]{fontenc}
+\usepackage{indentfirst}
+\usepackage{misccorr}
+\usepackage{ncccomma}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{paralist}
+\usepackage{topcapt}
+\usepackage[section]{placeins}
+\usepackage{graphicx}
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{multirow}
+\renewcommand{\phi}{\varphi}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\kappa}{\varkappa}
+\renewcommand{\epsilon}{\varepsilon}
+\begin{document}
+ \tableofcontents
+ \newpage 
+ \pagestyle{headings}
+ \include{Introduction/Introduction}
+ \include{OS/OS}
+ \include{Software/Software}
+ \include{Hardware/Hardware}
+ \include{Networking/Networking}
+ \include{Internet/Internet}
+\end{document}
