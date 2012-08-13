@@ -1,6 +1,7 @@
 \documentclass[a4paper, 12pt, oneside]{book}
 \frenchspacing
 \usepackage[warn]{mathtext}
+\usepackage{ucs}
 \usepackage[utf8x]{inputenc}
 \usepackage[english, russian]{babel}
 \usepackage[T2A]{fontenc}
@@ -19,7 +20,8 @@
 \usepackage{multirow}
 \usepackage{enumitem}
 \usepackage{listings}
-\usepackage[unicode=true, hidelinks=true]{hyperref}
+\usepackage[unicode=true, hidelinks]{hyperref}
+\usepackage{keystroke}
 \renewcommand{\phi}{\varphi}
 \renewcommand{\le}{\leqslant}
 \renewcommand{\ge}{\geqslant}
@@ -29,7 +31,6 @@
 \begin{document}
  \tableofcontents
  \newpage 
- \hypersetup{hidelinks=false}
  \pagestyle{headings}
  \include{base/base}
  \include{cxx/cxx}
