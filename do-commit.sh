@@ -1,4 +1,4 @@
-rm -f *.{aux,bbl,blg,log,pdf,toc,bak,out,dvi,ps} */*.{pdf,aux,bak} */*/*.{pdf,aux,bak}
+rm -f *.{aux,bbl,blg,log,pdf,toc,bak,out,dvi,ps} */*.{pdf,aux,bak,log} */*/*.{pdf,aux,bak,log}
 git add .
 git commit
 git push
