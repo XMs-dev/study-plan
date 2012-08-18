@@ -1,4 +1,4 @@
-\documentclass[a4paper, 12pt]{book}
+\documentclass[a4paper, 12pt]{scrbook}
 \frenchspacing
 \usepackage[warn]{mathtext}
 \usepackage[utf8x]{inputenc}
@@ -31,6 +31,13 @@
  \tableofcontents
  \newpage 
  \pagestyle{headings}
+ \lstloadlanguages{Bash}        
+ \lstset{extendedchars=true,
+		escapechar=|,
+		frame=tb,			 %рамка сверху и внизу
+		%commentstyle=\itshape, %шрифт комментариев
+		%stringstyle=\bfseries %шрифт для строк
+		}
  \include{base/base}
  \include{cxx/cxx}
  \include{python/python}
