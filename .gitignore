@@ -1,0 +1,4 @@
+.*.sw[a-z]
+*~
+.DS_Store
+*.{aux,bbl,blg,log,pdf,toc,bak,out,dvi,ps,}
