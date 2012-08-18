@@ -1,9 +1,16 @@
 \part{Компьютерная грамотность}\label{base}
-\lstset{language=Bash,
-		escapechar={|},
-		frame=tb,
-        extendedchars=true,%не работает нихуя, равно как и с \true
-        inputencoding=utf8x}%это тоже
+%\lstset{language=Bash,
+%		escapechar={|},
+%		frame=tb,
+%        extendedchars=true,%не работает нихуя, равно как и с \true
+%        inputencoding=utf8x}%это тоже
+\lstloadlanguages{Bash}        
+\lstset{extendedchars=true,
+		escapechar=|,
+		frame=tb,			 %рамка сверху и внизу
+		%commentstyle=\itshape, %шрифт комментариев
+		%stringstyle=\bfseries %шрифт для строк
+		}
 \input{base/Introduction/Introduction}
 \input{base/OS/OS}
 \input{base/Software/Software}

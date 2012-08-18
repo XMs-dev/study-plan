@@ -413,3 +413,16 @@
 \paragraph{Менеджер окон (Window Manager)} --- то, что управляет окнами: перемещение, открытие, закрытие, изменение размеров, вывод элементов управления. Примеры WM: *box, kwin, compiz, metacity
 
 \paragraph{Окружение рабочего стола (Desktop Environment)} предоставляет пользователю рабочий стол, зачастую (но не обязательно) собственные, тесно интегрированные между собой программные пакеты для работы с файлами, приложениями, оборудованием. Примеры DE: KDE, Gnome, Unity
+
+\begin{lstlisting}[language=Bash, caption={Сценарий используемы для отправки коммитов},escapeinside='']
+rm -f *.{aux,bbl,blg,log,pdf,toc,bak,out,dvi,ps} */*.{pdf,aux,bak,log} */*/*.{pdf,aux,bak,log}
+git add .
+git commit
+git push
+# 'Русский комментарий'
+rm -f *.{aux,bll,blg,log,pdf,toc,bak,out,dvi,ps} */*.{pdf,aux,bak,log} */*/*.{pdf,aux,bak,log}
+pdflatex study-plan.tex
+bibtex study-plan.aux > /dev/null
+pdflatex study-plan.tex > /dev/null
+pdflatex study-plan.tex > /dev/null
+\end{lstlisting}
