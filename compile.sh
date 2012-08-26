@@ -1,5 +1,5 @@
 ./cleanup.sh
 pdflatex study-plan.tex
-bibtex study-plan.aux > /dev/null
-pdflatex study-plan.tex > /dev/null
-pdflatex study-plan.tex > /dev/null
+bibtex study-plan.aux
+pdflatex study-plan.tex
+pdflatex study-plan.tex
